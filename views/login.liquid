@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'headerLink' %}
+</head>
+<body>
+{% include 'header' %}
+    <form class="login_form">
+        <input type="text" id="cityName" placholder="Enter City name">
+        <input type="submit" value="Search" id="submitBtn">
+    </form>
+    <div class="temp_info">
+        <p id="day">Friday</p>
+        <p id="date">13-oct</p>
+    </div>
+
+    <div class="output">
+        <p id="city_name">{{ name }}</p>
+        <p id="temp"><span>26.36</span><sup>o</sup>C</p>
+        <p id="status">hello</p>
+    </div>
+
+{% include 'footer' %}
+
+</body>
+</html>
